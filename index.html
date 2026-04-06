@@ -14,17 +14,19 @@
        Design System + Reset
     ============================ */
     :root {
-      --bg: #000000;
-      --bg2: #04000f;
-      --accent: #00ffcc;
-      --accent2: #a855f7;
-      --text: #f0f0f0;
-      --text-muted: #555;
+      --bg: #080b14;
+      --bg2: #0d1220;
+      --accent: #38bdf8;
+      --accent2: #818cf8;
+      --text: #e2e8f0;
+      --text-muted: #475569;
+      --glow: rgba(56, 189, 248, 0.15);
+      --glow2: rgba(129, 140, 248, 0.15);
       --surface: rgba(255, 255, 255, 0.06);
       --surface-strong: rgba(255, 255, 255, 0.1);
       --border: rgba(255, 255, 255, 0.12);
-      --shadow-cyan: 0 0 30px rgba(0, 255, 204, 0.15);
-      --shadow-purple: 0 0 44px rgba(168, 85, 247, 0.14);
+      --shadow-cyan: 0 0 30px var(--glow);
+      --shadow-purple: 0 0 44px var(--glow2);
       --container: min(1180px, calc(100vw - 32px));
       --header-h: 84px;
       --radius-lg: 28px;
@@ -43,7 +45,7 @@
     }
 
     section {
-      contain: layout style;
+      contain: style;
     }
 
     canvas {
@@ -53,8 +55,8 @@
 
     body {
       background:
-        radial-gradient(circle at top left, rgba(0, 255, 204, 0.08), transparent 24%),
-        radial-gradient(circle at top right, rgba(168, 85, 247, 0.1), transparent 28%),
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.08), transparent 24%),
+        radial-gradient(circle at top right, rgba(129, 140, 248, 0.1), transparent 28%),
         linear-gradient(180deg, var(--bg), var(--bg2));
       color: var(--text);
       font-family: "Syne", sans-serif;
@@ -89,7 +91,7 @@
 
     ::selection {
       background: var(--accent);
-      color: #000;
+      color: #0a0a0f;
     }
 
     ::-webkit-scrollbar {
@@ -101,13 +103,13 @@
     }
 
     ::-webkit-scrollbar-thumb {
-      background: var(--accent);
+      background: var(--accent2);
       border-radius: 999px;
     }
 
     body {
       scrollbar-width: thin;
-      scrollbar-color: var(--accent) #111;
+      scrollbar-color: var(--accent2) #111;
     }
 
     .site-shell {
@@ -136,14 +138,14 @@
       width: 10px;
       height: 10px;
       background: var(--accent);
-      box-shadow: 0 0 18px rgba(0, 255, 204, 0.8);
+      box-shadow: 0 0 18px rgba(56, 189, 248, 0.45);
     }
 
     .cursor-ring {
       width: 30px;
       height: 30px;
-      border: 1px solid rgba(0, 255, 204, 0.85);
-      box-shadow: 0 0 24px rgba(0, 255, 204, 0.18);
+      border: 1px solid rgba(56, 189, 248, 0.85);
+      box-shadow: 0 0 24px var(--glow);
     }
 
     .container {
@@ -161,12 +163,13 @@
 
     .section {
       position: relative;
+      overflow: hidden;
       padding: 120px 0;
       isolation: isolate;
-      contain: layout style;
+      contain: style;
       background-image:
-        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+        linear-gradient(rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(129, 140, 248, 0.04) 1px, transparent 1px);
       background-size: 56px 56px;
     }
 
@@ -252,6 +255,7 @@
       position: relative;
       display: grid;
       place-items: center;
+      color: var(--accent);
     }
 
     .hex-logo svg {
@@ -260,7 +264,7 @@
       width: 100%;
       height: 100%;
       animation: spin 5s linear infinite;
-      filter: drop-shadow(0 0 18px rgba(0, 255, 204, 0.4));
+      filter: drop-shadow(0 0 18px rgba(56, 189, 248, 0.3));
     }
 
     .hex-logo span {
@@ -268,7 +272,7 @@
       font-size: 1.8rem;
       font-weight: 700;
       color: var(--accent);
-      text-shadow: 0 0 18px rgba(0, 255, 204, 0.4);
+      text-shadow: 0 0 18px rgba(56, 189, 248, 0.3);
     }
 
     .loader-copy {
@@ -290,7 +294,7 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(90deg, var(--accent), var(--accent2));
-      box-shadow: 0 0 20px rgba(0, 255, 204, 0.45);
+      box-shadow: 0 0 20px var(--glow);
       transform: scaleX(0);
       transform-origin: left;
     }
@@ -341,12 +345,12 @@
       border-radius: 18px;
       display: grid;
       place-items: center;
-      border: 1px solid rgba(0, 255, 204, 0.3);
-      background: rgba(0, 255, 204, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      background: rgba(56, 189, 248, 0.1);
       color: var(--accent);
       font-family: "Space Mono", monospace;
       font-weight: 700;
-      box-shadow: 0 0 24px rgba(0, 255, 204, 0.18);
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
       animation: brandPulse 2.4s infinite;
     }
 
@@ -382,7 +386,7 @@
       height: 2px;
       border-radius: 999px;
       background: var(--accent);
-      box-shadow: 0 0 12px rgba(0, 255, 204, 0.8);
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
       transition: transform 0.35s ease, width 0.35s ease;
     }
 
@@ -475,9 +479,9 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(circle at 20% 30%, rgba(0, 255, 204, 0.14), transparent 20%),
-        radial-gradient(circle at 70% 40%, rgba(168, 85, 247, 0.18), transparent 25%),
-        radial-gradient(circle at 45% 80%, rgba(0, 255, 204, 0.1), transparent 20%);
+        radial-gradient(circle at 20% 30%, rgba(56, 189, 248, 0.14), transparent 20%),
+        radial-gradient(circle at 70% 40%, rgba(129, 140, 248, 0.18), transparent 25%),
+        radial-gradient(circle at 45% 80%, rgba(56, 189, 248, 0.1), transparent 20%);
       animation: driftBackground 12s linear infinite;
     }
 
@@ -503,7 +507,7 @@
       display: grid;
       align-items: center;
       padding-top: calc(var(--header-h) + 72px);
-      overflow: clip;
+      overflow: hidden;
     }
 
     #hero-canvas,
@@ -524,35 +528,71 @@
       display: grid;
       justify-items: center;
       text-align: center;
-      gap: 22px;
+      gap: 14px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(56, 189, 248, 0.06);
+      border: 0.5px solid rgba(56, 189, 248, 0.2);
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-size: 12px;
+      color: #94a3b8;
+      font-family: "Space Mono", monospace;
+    }
+
+    .hero-badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #4ade80;
+      display: inline-block;
+      animation: pulse 2s infinite;
     }
 
     .hero-name {
       font-family: "Space Mono", monospace;
-      font-size: clamp(3.2rem, 11vw, 8.6rem);
+      font-size: clamp(56px, 10vw, 120px);
+      font-weight: 800;
       min-height: 1.2em;
-      line-height: 0.95;
-      letter-spacing: -0.04em;
-      text-transform: uppercase;
-      text-shadow: 0 0 34px rgba(0, 255, 204, 0.12);
+      line-height: 0.9;
+      letter-spacing: -3px;
+      text-transform: none;
+      color: #f0f9ff;
+      text-shadow: 0 0 34px var(--glow);
     }
 
     .hero-role {
       min-height: 1.6em;
-      font-size: clamp(1.2rem, 3vw, 2rem);
-      color: rgba(240, 240, 240, 0.75);
+      font-family: "Space Mono", monospace;
+      font-size: 12px;
+      letter-spacing: 3px;
+      color: #7dd3fc;
+      text-transform: uppercase;
+      text-shadow: 0 0 18px rgba(56, 189, 248, 0.18);
+      background: rgba(8, 11, 20, 0.32);
+      padding: 6px 12px;
+      border-radius: 6px;
     }
 
     .hero-role span {
-      color: var(--accent);
+      color: #7dd3fc;
       font-family: "Space Mono", monospace;
     }
 
     .hero-copy {
-      max-width: 720px;
-      color: rgba(240, 240, 240, 0.72);
-      line-height: 1.8;
-      font-size: 1.02rem;
+      max-width: 420px;
+      color: #cbd5e1;
+      line-height: 1.7;
+      font-size: 16px;
+      text-align: center;
+      text-shadow: 0 2px 16px rgba(8, 11, 20, 0.55);
+      background: rgba(8, 11, 20, 0.18);
+      padding: 4px 10px;
+      border-radius: 6px;
     }
 
     .hero-actions {
@@ -562,24 +602,23 @@
       justify-content: center;
     }
 
-    .btn {
+    .hero .btn {
       position: relative;
       overflow: hidden;
-      min-height: 54px;
-      padding: 0 24px;
-      border-radius: 999px;
-      border: 1px solid transparent;
+      min-height: auto;
+      padding: 12px 28px;
+      border-radius: 8px;
+      border: none;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 10px;
-      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-                  opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-                  box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      font-size: 14px;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    .btn::after {
+    .hero .btn::after {
       content: "";
       position: absolute;
       width: 12px;
@@ -591,20 +630,33 @@
       pointer-events: none;
     }
 
-    .btn:hover {
-      transform: translateY(-3px);
+    .hero .btn:hover {
+      transform: translateY(-2px);
     }
 
-    .btn-primary {
-      background: linear-gradient(135deg, var(--accent), #74ffe1);
-      color: #000;
+    .hero .btn-primary {
+      background: #38bdf8;
+      color: #080b14;
       font-weight: 700;
-      box-shadow: 0 18px 36px rgba(0, 255, 204, 0.22);
+      box-shadow: none;
     }
 
-    .btn-ghost {
-      border-color: rgba(255, 255, 255, 0.16);
-      background: rgba(255, 255, 255, 0.04);
+    .hero .btn-primary:hover {
+      box-shadow: 0 8px 25px rgba(56, 189, 248, 0.3);
+    }
+
+    .hero .btn-ghost {
+      background: transparent;
+      color: #38bdf8;
+      border: 0.5px solid rgba(56, 189, 248, 0.4);
+    }
+
+    .hero-accent-line {
+      width: 50px;
+      height: 2px;
+      background: linear-gradient(90deg, #38bdf8, #818cf8);
+      border-radius: 2px;
+      margin: 16px auto;
     }
 
     .scroll-cue {
@@ -660,7 +712,7 @@
       height: 100%;
       min-height: 440px;
       border-radius: calc(var(--radius-lg) - 8px);
-      background: radial-gradient(circle at center, rgba(0, 255, 204, 0.06), rgba(0, 0, 0, 0.4));
+      background: radial-gradient(circle at center, rgba(56, 189, 248, 0.06), rgba(0, 0, 0, 0.4));
     }
 
     .about-text {
@@ -703,7 +755,7 @@
        Projects
     ============================ */
     .projects {
-      overflow: clip;
+      overflow: hidden;
     }
 
     .projects-shell {
@@ -715,8 +767,8 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(circle at 20% 20%, rgba(168, 85, 247, 0.18), transparent 24%),
-        radial-gradient(circle at 75% 70%, rgba(0, 255, 204, 0.12), transparent 24%);
+        radial-gradient(circle at 20% 20%, rgba(129, 140, 248, 0.18), transparent 24%),
+        radial-gradient(circle at 75% 70%, rgba(56, 189, 248, 0.12), transparent 24%);
       filter: blur(40px);
       animation: driftBackground 14s linear infinite alternate;
       pointer-events: none;
@@ -833,8 +885,8 @@
 
     .icon-btn:hover {
       transform: translateY(-3px);
-      border-color: rgba(0, 255, 204, 0.4);
-      box-shadow: 0 0 22px rgba(0, 255, 204, 0.18);
+      border-color: rgba(56, 189, 248, 0.25);
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
     }
 
     .icon-btn svg {
@@ -849,7 +901,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='104' viewBox='0 0 120 104'%3E%3Cpath d='M30 2h60l28 50-28 50H30L2 52 30 2Z' fill='none' stroke='%2300ffcc' stroke-opacity='0.12' stroke-width='1.4'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='104' viewBox='0 0 120 104'%3E%3Cpath d='M30 2h60l28 50-28 50H30L2 52 30 2Z' fill='none' stroke='%2338bdf8' stroke-opacity='0.12' stroke-width='1.4'/%3E%3C/svg%3E");
       background-size: 140px 122px;
       opacity: 0.5;
       animation: driftBackground 18s linear infinite;
@@ -906,7 +958,7 @@
       height: 100%;
       border-radius: inherit;
       background: linear-gradient(90deg, var(--accent), var(--accent2));
-      box-shadow: 0 0 18px rgba(0, 255, 204, 0.24);
+      box-shadow: 0 0 18px var(--glow);
     }
 
     .skill-category {
@@ -917,8 +969,8 @@
 
     .skill-category:hover {
       transform: translateY(-6px) scale(1.01);
-      border-color: rgba(0, 255, 204, 0.25);
-      box-shadow: 0 0 34px rgba(0, 255, 204, 0.16);
+      border-color: rgba(56, 189, 248, 0.25);
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
     }
 
     .skill-category h3 {
@@ -961,7 +1013,7 @@
       width: 2px;
       transform: translateX(-50%);
       background: linear-gradient(180deg, transparent, var(--accent), transparent);
-      box-shadow: 0 0 18px rgba(0, 255, 204, 0.45);
+      box-shadow: 0 0 18px var(--glow);
     }
 
     .timeline-item {
@@ -992,7 +1044,7 @@
       width: 18px;
       height: 18px;
       background: var(--accent);
-      box-shadow: 0 0 16px rgba(0, 255, 204, 0.8);
+      box-shadow: 0 0 16px rgba(56, 189, 248, 0.4);
     }
 
     .timeline-card {
@@ -1024,7 +1076,7 @@
        Contact
     ============================ */
     .contact {
-      overflow: clip;
+      overflow: hidden;
     }
 
     #contact-canvas {
@@ -1093,7 +1145,7 @@
     .terminal-field textarea {
       width: 100%;
       border: 0;
-      border-bottom: 1px solid rgba(0, 255, 204, 0.36);
+      border-bottom: 1px solid rgba(56, 189, 248, 0.36);
       background: transparent;
       color: var(--text);
       padding: 12px 0;
@@ -1173,8 +1225,8 @@
 
     .social-pill:hover {
       transform: translateY(-4px);
-      border-color: rgba(0, 255, 204, 0.3);
-      box-shadow: 0 0 24px rgba(0, 255, 204, 0.14);
+      border-color: rgba(56, 189, 248, 0.25);
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
     }
 
     .footer-note {
@@ -1254,8 +1306,8 @@
        Animations
     ============================ */
     @keyframes pulse {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.35); opacity: 0.7; }
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
     }
 
     @keyframes spin {
@@ -1263,8 +1315,8 @@
     }
 
     @keyframes brandPulse {
-      0%, 100% { box-shadow: 0 0 22px rgba(0, 255, 204, 0.16); }
-      50% { box-shadow: 0 0 36px rgba(0, 255, 204, 0.34); }
+      0%, 100% { box-shadow: 0 0 22px var(--glow); }
+      50% { box-shadow: 0 0 36px rgba(56, 189, 248, 0.28); }
     }
 
     @keyframes driftBackground {
@@ -1411,7 +1463,7 @@
     <div class="loader-inner">
       <div class="hex-logo">
         <svg viewBox="0 0 100 100" fill="none" aria-hidden="true">
-          <path d="M50 6L84 25V75L50 94L16 75V25L50 6Z" stroke="#00ffcc" stroke-width="2.5"></path>
+          <path d="M50 6L84 25V75L50 94L16 75V25L50 6Z" stroke="currentColor" stroke-width="2.5"></path>
         </svg>
         <span>HR</span>
       </div>
@@ -1488,16 +1540,14 @@ Let's build something legendary.
       <canvas id="hero-canvas" aria-hidden="true"></canvas>
       <div class="hero-fade"></div>
       <div class="container hero-layout gsap-animated">
-        <div class="eyebrow">
-          <span class="status-dot"></span>
-          <span>Open to internships</span>
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          <span>available for hire</span>
         </div>
-        <h1 class="hero-name gsap-animated" id="hero-name">HARSHA R HUTAGI</h1>
+        <h1 class="hero-name gsap-animated" id="hero-name">Harsha Hutagi</h1>
+        <div class="hero-accent-line gsap-animated"></div>
         <p class="hero-role gsap-animated"><span id="hero-role"></span></p>
-        <p class="hero-copy gsap-animated">
-          Computer Science student focused on building immersive interfaces, scalable products,
-          and clever engineering experiences that feel as polished as they are useful.
-        </p>
+        <p class="hero-copy gsap-animated">Building things people actually use.</p>
         <div class="hero-actions gsap-animated">
           <a href="#projects" class="btn btn-primary ripple-btn">View My Work</a>
           <a href="#" class="btn btn-ghost ripple-btn">Download CV</a>
@@ -1934,39 +1984,30 @@ Let's build something legendary.
     ============================ */
     function initGlitchName() {
       const heroName = document.getElementById("hero-name");
-      const original = "HARSHA R HUTAGI";
+      const original = "Harsha Hutagi";
       const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#@!*";
       let iteration = 0;
-      let revealed = false;
 
       const interval = setInterval(() => {
-        if (!revealed) {
-          heroName.textContent = original
-            .split("")
-            .map((char, index) => {
-              if (char === " ") return " ";
-              if (index < iteration) return original[index];
-              return chars[Math.floor(Math.random() * chars.length)];
-            })
-            .join("");
+        heroName.textContent = original
+          .split("")
+          .map((char, index) => {
+            if (char === " ") return " ";
+            if (index < iteration) return original[index];
+            return chars[Math.floor(Math.random() * chars.length)];
+          })
+          .join("");
 
-          iteration += 0.5;
-          if (iteration >= original.length) {
-            heroName.textContent = original;
-            revealed = true;
-            iteration = 0;
-          }
-          return;
-        }
-
-        if (iteration === 0) {
+        iteration += 0.5;
+        if (iteration >= original.length) {
+          heroName.textContent = original;
           clearInterval(interval);
         }
       }, 45);
     }
 
     function initTypewriterRoles() {
-      const roles = ["CS Student", "Full Stack Dev", "Problem Solver", "Open Source Contributor"];
+      const roles = ["CS Student & Builder", "Full Stack Dev", "Problem Solver", "Open Source Contributor"];
       const target = document.getElementById("hero-role");
       let roleIndex = 0;
       let charIndex = 0;
@@ -1975,7 +2016,7 @@ Let's build something legendary.
 
       const interval = setInterval(() => {
         const current = roles[roleIndex];
-        target.textContent = current.slice(0, charIndex);
+        target.textContent = `// ${current.slice(0, charIndex)}`;
 
         if (!deleting && charIndex < current.length) {
           charIndex += 1;
@@ -2108,9 +2149,15 @@ Let's build something legendary.
         positions[i3 + 2] = original[i3 + 2] = z;
 
         const mix = Math.random();
-        colors[i3] = mix < 0.6 ? 1 : 0;
-        colors[i3 + 1] = 1;
-        colors[i3 + 2] = mix < 0.6 ? 1 : 0.95;
+        if (mix < 0.6) {
+          colors[i3] = 56 / 255;
+          colors[i3 + 1] = 189 / 255;
+          colors[i3 + 2] = 248 / 255;
+        } else {
+          colors[i3] = 129 / 255;
+          colors[i3 + 1] = 140 / 255;
+          colors[i3 + 2] = 248 / 255;
+        }
       }
 
       galaxyGeometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
@@ -2131,17 +2178,25 @@ Let's build something legendary.
       const knot = new THREE.Mesh(
         new THREE.TorusKnotGeometry(3.2, 1.02, 180, 26),
         new THREE.MeshStandardMaterial({
-          color: 0x00ffcc,
+          color: 0x38bdf8,
           wireframe: true,
-          emissive: 0x00ffcc,
+          emissive: 0x38bdf8,
           emissiveIntensity: 0.25
         })
       );
 
-      const light = new THREE.PointLight(0x00ffcc, 1.9, 120);
-      light.position.set(6, 5, 10);
+      const light = new THREE.PointLight(0x38bdf8, 2, 4);
+      light.position.set(0, 0, 0);
+      const spriteMat = new THREE.SpriteMaterial({
+        color: 0x38bdf8,
+        transparent: true,
+        opacity: 0.06,
+        blending: THREE.AdditiveBlending
+      });
+      const sprite = new THREE.Sprite(spriteMat);
+      sprite.scale.set(3, 3, 1);
       const ambient = new THREE.AmbientLight(0xffffff, 0.55);
-      scene.add(points, knot, light, ambient);
+      scene.add(points, knot, light, sprite, ambient);
 
       const mouse = { x: 9999, y: 9999 };
       window.addEventListener("mousemove", (e) => {
@@ -2213,7 +2268,7 @@ Let's build something legendary.
         grad.addColorStop(1, "#040404");
         ctx.fillStyle = grad;
         ctx.fillRect(0, 0, 512, 512);
-        ctx.strokeStyle = "#00ffcc";
+        ctx.strokeStyle = "#38bdf8";
         ctx.lineWidth = 12;
         ctx.strokeRect(24, 24, 464, 464);
         ctx.font = "190px sans-serif";
@@ -2226,12 +2281,12 @@ Let's build something legendary.
       const cube = new THREE.Mesh(new THREE.BoxGeometry(2, 2, 2), materials);
       const edges = new THREE.LineSegments(
         new THREE.EdgesGeometry(new THREE.BoxGeometry(2.02, 2.02, 2.02)),
-        new THREE.LineBasicMaterial({ color: 0x00ffcc })
+        new THREE.LineBasicMaterial({ color: 0x38bdf8 })
       );
       cube.add(edges);
       scene.add(cube);
       scene.add(new THREE.AmbientLight(0xffffff, 0.9));
-      const point = new THREE.PointLight(0x00ffcc, 1.6, 20);
+      const point = new THREE.PointLight(0x38bdf8, 0.8, 20);
       point.position.set(3, 3, 4);
       scene.add(point);
 
@@ -2299,7 +2354,7 @@ Let's build something legendary.
       const stars = new THREE.Points(
         geometry,
         new THREE.PointsMaterial({
-          color: 0x00ffcc,
+          color: 0x38bdf8,
           size: 0.05,
           transparent: true,
           opacity: 0.75
@@ -2369,6 +2424,7 @@ Let's build something legendary.
     }
 
     function initProjectsScroll() {
+      const projectsSection = document.querySelector("#projects");
       const track = document.getElementById("projects-track");
       if (isMobile()) {
         gsap.utils.toArray(".project-card").forEach((card) => {
@@ -2389,16 +2445,22 @@ Let's build something legendary.
       }
 
       const totalScroll = () => Math.max(track.scrollWidth - window.innerWidth, 0);
+      if (totalScroll() <= 0) {
+        gsap.set(track, { x: 0 });
+        return;
+      }
+
       gsap.to(track, {
         x: () => -totalScroll(),
         ease: "none",
         scrollTrigger: {
-          trigger: "#projects-pin",
+          trigger: projectsSection,
           start: "top top",
-          end: () => `+=${totalScroll() + window.innerHeight}`,
+          end: () => "+=" + Math.max(totalScroll(), projectsSection.offsetWidth),
           scrub: 1,
           pin: true,
           anticipatePin: 1,
+          pinSpacing: true,
           fastScrollEnd: true,
           preventOverlaps: true,
           invalidateOnRefresh: true
@@ -2643,9 +2705,14 @@ Let's build something legendary.
       document.querySelectorAll(".ripple-btn").forEach((btn) => {
         btn.addEventListener("pointerdown", (e) => createRipple(e, btn));
       });
+      ScrollTrigger.addEventListener("refreshInit", () => {
+        gsap.set(".gsap-animated", { clearProps: "all" });
+      });
       ScrollTrigger.refresh();
     });
-    window.addEventListener("load", () => ScrollTrigger.refresh());
+    window.addEventListener("load", () => {
+      ScrollTrigger.refresh(true);
+    });
   </script>
 </body>
 </html>
