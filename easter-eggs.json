@@ -1,0 +1,16 @@
+{
+  "terminalCommand": "sudo hire me",
+  "konamiCode": [
+    "ArrowUp",
+    "ArrowUp",
+    "ArrowDown",
+    "ArrowDown",
+    "ArrowLeft",
+    "ArrowRight",
+    "ArrowLeft",
+    "ArrowRight",
+    "b",
+    "a"
+  ],
+  "returnTitle": "Come back! 👋"
+}

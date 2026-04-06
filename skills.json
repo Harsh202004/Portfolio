@@ -1,0 +1,29 @@
+{
+  "sectionLabel": "// skills.matrix",
+  "title": "A toolkit built through projects, iteration, and a lot of late-night debugging.",
+  "bars": [
+    { "name": "JavaScript", "value": 92 },
+    { "name": "Python", "value": 85 },
+    { "name": "React", "value": 88 },
+    { "name": "Node.js", "value": 82 },
+    { "name": "C++", "value": 78 },
+    { "name": "SQL", "value": 75 }
+  ],
+  "categories": [
+    {
+      "icon": "🎨",
+      "title": "Frontend",
+      "items": ["React", "Three.js", "Tailwind", "GSAP"]
+    },
+    {
+      "icon": "🧩",
+      "title": "Backend",
+      "items": ["Node.js", "Python", "PostgreSQL", "REST/GraphQL"]
+    },
+    {
+      "icon": "🛠️",
+      "title": "Tools",
+      "items": ["Git", "Docker", "Linux", "Figma"]
+    }
+  ]
+}

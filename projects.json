@@ -1,0 +1,42 @@
+[
+  {
+    "id": "01",
+    "title": "AI Weather App",
+    "description": "Smart forecast experience with predictive insights, location-aware UI, and elegant animated data layers.",
+    "techStack": ["React", "Python", "OpenWeatherAPI", "TensorFlow.js"],
+    "github": "https://github.com/",
+    "liveDemo": "#"
+  },
+  {
+    "id": "02",
+    "title": "Real-Time Chat",
+    "description": "Secure realtime messaging platform with auth, rooms, live presence, and production-minded backend architecture.",
+    "techStack": ["Node.js", "Socket.io", "MongoDB", "JWT Auth"],
+    "github": "https://github.com/",
+    "liveDemo": "#"
+  },
+  {
+    "id": "03",
+    "title": "DSA Visualizer",
+    "description": "Interactive playground for sorting, graph traversal, recursion, and classic problem solving with animated algorithm traces.",
+    "techStack": ["Vanilla JS", "Canvas API", "15+ Algorithms"],
+    "github": "https://github.com/",
+    "liveDemo": "#"
+  },
+  {
+    "id": "04",
+    "title": "E-Commerce Platform",
+    "description": "Modern storefront with seamless checkout, typed data flows, and a backend built for reliability and scale.",
+    "techStack": ["Next.js", "Stripe", "Prisma", "PostgreSQL"],
+    "github": "https://github.com/",
+    "liveDemo": "#"
+  },
+  {
+    "id": "05",
+    "title": "CLI Portfolio Tool",
+    "description": "A terminal-first self-introduction utility with rich formatting, command routing, and a delightfully nerdy personality.",
+    "techStack": ["Python", "Rich", "ASCII Art"],
+    "github": "https://github.com/",
+    "liveDemo": "#"
+  }
+]

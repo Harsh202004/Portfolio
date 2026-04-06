@@ -1,0 +1,30 @@
+{
+  "sectionLabel": "// about.exe",
+  "title": "Building things that matter.",
+  "paragraphs": [
+    "I'm a Computer Science student who loves turning ideas into experiences people remember. My sweet spot sits between software engineering, interaction design, and the kind of curiosity that keeps me iterating until a project feels alive.",
+    "I enjoy shipping full-stack products, exploring creative frontends with WebGL, and learning by building. Whether it's solving algorithmic problems or polishing micro-interactions, I care deeply about thoughtful systems and human-centered execution."
+  ],
+  "cubeFaces": ["💻", "🎓", "🚀", "☕", "🎮", "🎯"],
+  "stats": [
+    {
+      "value": 10,
+      "suffix": "+",
+      "label": "Projects"
+    },
+    {
+      "value": 2,
+      "suffix": "+",
+      "label": "Internships"
+    },
+    {
+      "value": 5,
+      "suffix": "+",
+      "label": "Hackathons"
+    }
+  ],
+  "cvButton": {
+    "label": "Download CV",
+    "target": "#"
+  }
+}
