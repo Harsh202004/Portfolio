@@ -1,0 +1,114 @@
+{
+  // =============================
+  // PORTFOLIO DATA (EDIT THIS)
+  // =============================
+  // 1) You can reorder arrays (projects/certifications/skills) safely.
+  // 2) Keep key names same if code reads this file.
+  // 3) Image paths are relative to project root.
+
+  "profile": {
+    // Basic recruiter-facing profile details
+    "name": "Harsha Rajesh Hutagi",
+    "headline": "Software Developer | Full-Stack Developer | SDE Fresher (2026)",
+    "location": "Bangalore, Karnataka, India",
+    "email": "hhutagi@gmail.com",
+    "phone": "+91-9482799027",
+    "resume": "Harsha_Hutagi_Resume.pdf",
+    "about": "Final-year Computer Science and Engineering student (CGPA: 8.08, expected April 2026) with hands-on experience in full-stack web, Android, and AI-powered applications."
+  },
+
+  "socials": {
+    // Public profile links
+    "github": "https://github.com/Harsh202004",
+    "linkedin": "https://linkedin.com/in/harsha-hutagi-b4aa73267"
+  },
+
+  "highlights": {
+    // Numbers shown in About counters
+    "projects_count": 5,
+    "cgpa": 8.08,
+    "certifications_count": 3
+  },
+
+  "skills": {
+    // Add/remove items in arrays. Order controls display order.
+    "languages": ["Java", "Python", "C/C++", "SQL", "JavaScript"],
+    "web_frameworks": ["HTML", "CSS", "React", "Node.js", "Express", "React Native"],
+    "databases": ["MongoDB", "Firebase", "SQLite"],
+    "devops_cloud": ["Docker", "Kubernetes", "Jenkins", "Terraform", "AWS Fundamentals"],
+    "core_concepts": ["OOP", "Data Structures & Algorithms", "REST API Design", "CI/CD", "Agile/Scrum"]
+  },
+
+  "projects": [
+    // Copy one object below to add new project
+    {
+      "title": "AI-Powered Mental Health & Legal Assistance System",
+      "stack": ["Python", "NLP", "Streamlit", "SQLite"],
+      "summary": "AI-driven support system for mental health and legal guidance with intelligent query routing."
+    },
+    {
+      "title": "Spotify Playlist Maker",
+      "stack": ["Docker", "Jenkins", "Kubernetes", "Terraform"],
+      "summary": "Full-stack playlist generator using Spotify API with CI/CD and containerized deployment."
+    },
+    {
+      "title": "Online Streaming Platform",
+      "stack": ["Java", "Android Studio", "Firebase"],
+      "summary": "Native Android app with playback, categorization, search, and bookmarking."
+    },
+    {
+      "title": "ATM Reporting System",
+      "stack": ["MongoDB", "Express", "React", "Node.js"],
+      "summary": "MERN web app for secure real-time ATM transaction reporting dashboards."
+    },
+    {
+      "title": "Hotel Management System",
+      "stack": ["HTML", "CSS", "JavaScript"],
+      "summary": "Responsive hotel booking interface with reservation and admin views."
+    }
+  ],
+
+  "education": [
+    // Add PU/school entries if needed
+    {
+      "institution": "Dayananda Sagar College of Engineering",
+      "degree": "B.E. in Computer Science and Engineering",
+      "cgpa": 8.08,
+      "expected": "April 2026"
+    }
+  ],
+
+  "certifications": [
+    // Add new certificate object with image path
+    {
+      "name": "Artificial Intelligence",
+      "provider": "Illinois Tech via Coursera",
+      "date": "October 2025",
+      "credential_id": "UB3BMT98TCHS",
+      "image": "images/gallery/certificate-illinois-tech.png"
+    },
+    {
+      "name": "Bootcamp on Software and Network Security Fundamentals",
+      "provider": "C-DAC Hyderabad / FutureSkills PRIME",
+      "date": "October 2025",
+      "credential_id": "FSP/BCMP/C-DAC/HYD/SNSF/2509/0970",
+      "image": "images/gallery/certificate-cdac-security.png"
+    },
+    {
+      "name": "Getting Started with AWS",
+      "provider": "Simplilearn SkillUp",
+      "date": "May 2025",
+      "credential_id": "8302349",
+      "image": "images/gallery/certificate-aws-simplilearn.png"
+    }
+  ],
+
+  "images": {
+    // Central image paths
+    "certificates": [
+      "images/gallery/certificate-illinois-tech.png",
+      "images/gallery/certificate-cdac-security.png",
+      "images/gallery/certificate-aws-simplilearn.png"
+    ]
+  }
+}

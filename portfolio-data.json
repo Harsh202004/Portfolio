@@ -1,0 +1,102 @@
+{
+  "_comment": "Edit this file only. Keep keys same if your website code reads them.",
+  "_reorder_note": "You can reorder sections, project entries, and certification entries as needed.",
+  "profile": {
+    "_comment": "Basic recruiter-facing profile details",
+    "name": "Harsha Rajesh Hutagi",
+    "headline": "Software Developer | Full-Stack Developer | SDE Fresher (2026)",
+    "location": "Bangalore, Karnataka, India",
+    "email": "hhutagi@gmail.com",
+    "phone": "+91-9482799027",
+    "resume": "Harsha_Hutagi_Resume.pdf",
+    "about": "Final-year Computer Science and Engineering student (CGPA: 8.08, expected April 2026) with hands-on experience in full-stack web, Android, and AI-powered applications."
+  },
+  "socials": {
+    "_comment": "Public links shown in navbar/contact area",
+    "github": "https://github.com/Harsh202004",
+    "linkedin": "https://linkedin.com/in/harsha-hutagi-b4aa73267"
+  },
+  "highlights": {
+    "_comment": "Top counters shown in About section",
+    "projects_count": 5,
+    "cgpa": 8.08,
+    "certifications_count": 3
+  },
+  "skills": {
+    "_comment": "Add/remove items in arrays. Order controls display order.",
+    "languages": ["Java", "Python", "C/C++", "SQL", "JavaScript"],
+    "web_frameworks": ["HTML", "CSS", "React", "Node.js", "Express", "React Native"],
+    "databases": ["MongoDB", "Firebase", "SQLite"],
+    "devops_cloud": ["Docker", "Kubernetes", "Jenkins", "Terraform", "AWS Fundamentals"],
+    "core_concepts": ["OOP", "Data Structures & Algorithms", "REST API Design", "CI/CD", "Agile/Scrum"]
+  },
+  "_projects_help": "To add a new project: copy one object in projects[] and change title/stack/summary.",
+  "projects": [
+    {
+      "title": "AI-Powered Mental Health & Legal Assistance System",
+      "stack": ["Python", "NLP", "Streamlit", "SQLite"],
+      "summary": "AI-driven support system for mental health and legal guidance with intelligent query routing."
+    },
+    {
+      "title": "Spotify Playlist Maker",
+      "stack": ["Docker", "Jenkins", "Kubernetes", "Terraform"],
+      "summary": "Full-stack playlist generator using Spotify API with CI/CD and containerized deployment."
+    },
+    {
+      "title": "Online Streaming Platform",
+      "stack": ["Java", "Android Studio", "Firebase"],
+      "summary": "Native Android app with playback, categorization, search, and bookmarking."
+    },
+    {
+      "title": "ATM Reporting System",
+      "stack": ["MongoDB", "Express", "React", "Node.js"],
+      "summary": "MERN web app for secure real-time ATM transaction reporting dashboards."
+    },
+    {
+      "title": "Hotel Management System",
+      "stack": ["HTML", "CSS", "JavaScript"],
+      "summary": "Responsive hotel booking interface with reservation and admin views."
+    }
+  ],
+  "_education_help": "Add more education entries in education[] (college, PU, school).",
+  "education": [
+    {
+      "institution": "Dayananda Sagar College of Engineering",
+      "degree": "B.E. in Computer Science and Engineering",
+      "cgpa": 8.08,
+      "expected": "April 2026"
+    }
+  ],
+  "_certifications_help": "For each certificate add name/provider/date/credential_id/image path.",
+  "certifications": [
+    {
+      "name": "Artificial Intelligence",
+      "provider": "Illinois Tech via Coursera",
+      "date": "October 2025",
+      "credential_id": "UB3BMT98TCHS",
+      "image": "images/gallery/certificate-illinois-tech.png"
+    },
+    {
+      "name": "Bootcamp on Software and Network Security Fundamentals",
+      "provider": "C-DAC Hyderabad / FutureSkills PRIME",
+      "date": "October 2025",
+      "credential_id": "FSP/BCMP/C-DAC/HYD/SNSF/2509/0970",
+      "image": "images/gallery/certificate-cdac-security.png"
+    },
+    {
+      "name": "Getting Started with AWS",
+      "provider": "Simplilearn SkillUp",
+      "date": "May 2025",
+      "credential_id": "8302349",
+      "image": "images/gallery/certificate-aws-simplilearn.png"
+    }
+  ],
+  "images": {
+    "_comment": "Add images here and reuse paths in certifications/projects/about sections",
+    "certificates": [
+      "images/gallery/certificate-illinois-tech.png",
+      "images/gallery/certificate-cdac-security.png",
+      "images/gallery/certificate-aws-simplilearn.png"
+    ]
+  }
+}

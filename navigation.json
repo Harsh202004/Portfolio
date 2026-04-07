@@ -1,8 +1,0 @@
-[
-  { "label": "Home", "target": "#home" },
-  { "label": "About", "target": "#about" },
-  { "label": "Projects", "target": "#projects" },
-  { "label": "Skills", "target": "#skills" },
-  { "label": "Timeline", "target": "#timeline" },
-  { "label": "Contact", "target": "#contact" }
-]
