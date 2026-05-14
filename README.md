@@ -24,6 +24,7 @@ This is a static single-page portfolio built with plain HTML, CSS, and JavaScrip
         +-- certificate-cdac-security.png
         +-- certificate-illinois-tech.png
         +-- Cloud Certificate.pdf
+        +-- professional.jpeg
 ```
 
 ## Run Locally
